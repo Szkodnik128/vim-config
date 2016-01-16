@@ -41,9 +41,22 @@ filetype plugin indent on
 let g:SuperTabDefaultCompletionType = "context"
 let g:errormarker_errorgroup = "Error"
 
+" nerd tree"
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+nnoremap <F2> :NERDTreeToggle<CR>
+
 " key mappings "
-nnoremap <F5> :GundoToggle<CR>
-nnoremap <F7> :silent make<CR>:redraw!<CR>
+nnoremap <F7> :GundoToggle<CR>
+nnoremap <F5> :silent make<CR>:redraw!<CR>
+
+" split screen "
+nnoremap <C-down> <C-W><C-J>
+nnoremap <C-up> <C-W><C-K>
+nnoremap <C-right> <C-W><C-L>
+nnoremap <C-left> <C-W><C-H>
+set splitbelow
+set splitright
 
 " autoload plugins "
 augroup filetype
