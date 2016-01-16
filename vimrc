@@ -55,8 +55,10 @@ nnoremap <C-down> <C-W><C-J>
 nnoremap <C-up> <C-W><C-K>
 nnoremap <C-right> <C-W><C-L>
 nnoremap <C-left> <C-W><C-H>
-set splitbelow
 set splitright
+
+" clang "
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 
 " autoload plugins "
 augroup filetype
