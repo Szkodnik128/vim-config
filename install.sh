@@ -3,7 +3,6 @@
 sudo apt-get update && sudo apt-get install -y ctags build-essential cmake python-dev 
 
 pip install --user powerline-status
-pip install --user git+git://github.com/powerline/powerline
 
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
