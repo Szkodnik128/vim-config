@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get update && sudo apt-get install -y ctags build-essential cmake python-dev 
+sudo apt-get update && sudo apt-get install -y ctags build-essential cmake python-dev python-pip
 
 pip install --user powerline-status
 
