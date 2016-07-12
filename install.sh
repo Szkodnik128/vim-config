@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sudo apt-get update && sudo apt-get install -y ctags build-essential cmake python-dev python-pip
+sudo apt-get remove -y vim vim-gnome vim-common
+
+sudo apt-get update && sudo apt-get install -y vim-gnome-py2 ctags build-essential cmake python-dev python-pip
 
 pip install --user powerline-status
 
