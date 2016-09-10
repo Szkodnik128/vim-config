@@ -15,6 +15,11 @@ set t_Co=256
 set bs=2
 set fileencodings=ucs-bom,utf-8,default,cp1250,latin1
 set shell=/bin/sh
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent  
+set smartindent
 
 " APPEARANCE "
 syntax on
@@ -65,3 +70,6 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 augroup filetype
 	au! BufRead,BufNewFile *.proto setfiletype proto
 augroup end
+
+nnoremap <F3> :set invpaste paste?<CR>
+set pastetoggle=<F3>
